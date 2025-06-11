@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2021",                        // Define el nivel de ECMAScript que deseas usar
+    "module": "CommonJS",                       // Usamos CommonJS para Strapi
+    "lib": ["ES2021"],                          // Usa la librería de ES2021
+    "moduleResolution": "node",                 // Resuelve módulos como en Node.js
+    "esModuleInterop": true,                    // Habilita interoperabilidad entre módulos ES y CommonJS
+    "strict": true,                             // Habilita todas las comprobaciones estrictas
+    "baseUrl": ".",                             // La base del proyecto
+    "rootDir": "./src",                         // La raíz de tu código fuente (src)
+    "outDir": "./dist",                         // La carpeta donde saldrán los archivos compilados
+    "skipLibCheck": true,   
+    "forceConsistentCasingInFileNames": true                     // Omite la comprobación de tipos de bibliotecas
+  },
+  "include": ["./src"]                          // Incluye todo lo que esté dentro de la carpeta "src"
+}

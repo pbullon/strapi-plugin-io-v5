@@ -1,0 +1,69 @@
+{
+	"$schema": "https://json.schemastore.org/package",
+	"name": "strapi-plugin-io",
+	"version": "2.0.6",
+	"description": "A plugin for Strapi CMS that provides the ability for Socket IO integration",
+	"scripts": {
+		"lint": "eslint . --fix",
+		"format": "prettier --write \"./**/*.{js,json,yml,md}\"",
+		"docs:dev": "vitepress dev docs",
+		"docs:build": "vitepress build docs",
+		"docs:preview": "vitepress preview docs",
+		"build": "strapi build",
+		"develop": "strapi develop",
+		"watch:link": "yalc push --watch"
+	},
+	"author": {
+		"name": "@ComfortablyCoding",
+		"url": "https://github.com/ComfortablyCoding"
+	},
+	"maintainers": [
+		{
+			"name": "@ComfortablyCoding",
+			"url": "https://github.com/ComfortablyCoding",
+			"lead": true
+		},
+		{
+			"name": "@hrdunn",
+			"url": "https://github.com/hrdunn"
+		}
+	],
+	"homepage": "https://github.com/ComfortablyCoding/strapi-plugin-io#readme",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/ComfortablyCoding/strapi-plugin-io.git"
+	},
+	"bugs": {
+		"url": "https://github.com/ComfortablyCoding/strapi-plugin-io/issues"
+	},
+	"dependencies": {
+		"date-fns": "^3.0.6",
+		"socket.io": "^4.7.2",
+		"zod": "^3.22.4"
+	},
+	"peerDependencies": {
+		"@strapi/strapi": "^5.0.0",
+		"@strapi/utils": "^5.0.0"
+	},
+	"strapi": {
+		"name": "io",
+		"displayName": "IO",
+		"description": "A plugin for Strapi CMS that provides the ability for Socket IO integration",
+		"kind": "plugin"
+	},
+	"engines": {
+		"node": ">=18.0.0 <=20.x.x",
+		"npm": ">=6.0.0"
+	},
+	"keywords": [
+		"strapi",
+		"strapi-plugin",
+		"plugin",
+		"strapi plugin",
+		"socket",
+		"socket io",
+		"io"
+	],
+	"license": "MIT",
+	"yalcSig": "bb18208c391bf1b7ae8d78f5068a6537"
+}
