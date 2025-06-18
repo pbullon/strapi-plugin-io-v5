@@ -35,7 +35,8 @@
     "@strapi/design-system": "^2.0.0-rc.22",
     "@strapi/icons": "^2.0.0-rc.22",
     "react-intl": "^7.1.10",
-    "socket.io": "^4.8.1"
+    "socket.io": "^4.8.1",
+    "socket.io-client": "^4.8.1"
   },
   "devDependencies": {
     "@strapi/sdk-plugin": "^5.3.2",
@@ -64,8 +65,12 @@
     "displayName": "strapi-plugin-io-v5",
     "description": "plugin for work in real time"
   },
+  "engines": {
+    "strapi": "^5.0.0"
+  },
   "name": "strapi-plugin-io-v5",
   "description": "plugin for work in real time",
+  "author": "pbullon <pribullon@gmail.com>",
   "license": "MIT",
-  "author": "pbullon <pribullon@gmail.com>"
+  "main": "dist/server/index.js"
 }

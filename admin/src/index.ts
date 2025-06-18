@@ -14,7 +14,6 @@ export default {
       },
       Component: async () => {
         const { App } = await import('./pages/App');
-
         return App;
       },
     });
@@ -32,7 +31,6 @@ export default {
       locales.map(async (locale) => {
         try {
           const { default: data } = await import(`./translations/${locale}.json`);
-
           return { data, locale };
         } catch {
           return { data: {}, locale };
